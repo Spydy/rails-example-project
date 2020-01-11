@@ -6,6 +6,8 @@ COPY . .
 
 ENV LC_ALL=C.UTF-8
 
+EXPOSE 3000
+
 RUN chmod 777 -R /tmp/ && \
     apt-get install curl && \
     curl -sL https://deb.nodesource.com/setup_10.x | bash - && \
